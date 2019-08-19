@@ -1,0 +1,1 @@
+define kioko = Character("Kioko", color="#d73a49")
