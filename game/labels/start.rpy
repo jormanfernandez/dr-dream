@@ -8,14 +8,27 @@ label beggining:
 
   scene bg street evening with Dissolve(1.0)
 
-  """
-  Hi...
+  $ renpy.pause(delay=1.0)
 
-  I know, you are thinking how I ended up here. Don't worry, I'll you. 
+  show kioko normal at center
+  with Dissolve(0.5)
 
-  But perhaps in another time
+  kioko """
+  Hey...
+
+  Earth calling, are you there?
+
+  Dude, don't let me talking alone like that, its really freaky.
   """
-  
-  scene bg dark with Fade(2.0, 3.0, 2.0)
+
+  menu:
+    ""
+
+    "Yes, sorry":
+      $ choice = False
+
+    "I'll wait":
+      $ choice = True
+
 
 return

@@ -315,7 +315,7 @@ screen navigation():
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("  End Replay  ") action EndReplay(confirm=True)
 
         elif not main_menu:
 
@@ -470,7 +470,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Return"):
+    textbutton _("  Return  "):
         style "return_button"
 
         action Return()
@@ -659,19 +659,19 @@ screen file_slots(title):
 
                 spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious()
+                textbutton _("  <  ") action FilePagePrevious()
 
                 if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
+                    textbutton _("  {#auto_page}A  ") action FilePage("auto")
 
                 if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
+                    textbutton _("  {#quick_page}Q  ") action FilePage("quick")
 
                 ## range(1, 10) gives the numbers from 1 to 9.
                 for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
+                    textbutton "  [page]  " action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+                textbutton _("  >  ") action FilePageNext()
 
 
 style page_label is gui_label
@@ -728,23 +728,23 @@ screen preferences():
 
                     vbox:
                         style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        label _("  Display  ")
+                        textbutton _("  Window  ") action Preference("display", "window")
+                        textbutton _("  Fullscreen  ") action Preference("display", "fullscreen")
 
                 vbox:
                     style_prefix "radio"
                     label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
+                    textbutton _("  Disable  ") action Preference("rollback side", "disable")
+                    textbutton _("  Left  ") action Preference("rollback side", "left")
+                    textbutton _("  Right  ") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
                     label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                    textbutton _("  Unseen Text  ") action Preference("skip", "toggle")
+                    textbutton _("  After Choices  ") action Preference("after choices", "toggle")
+                    textbutton _("  Transitions  ") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -781,7 +781,7 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("  Test  ") action Play("sound", config.sample_sound)
 
 
                     if config.has_voice:
@@ -791,12 +791,12 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("  Test  ") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
+                        textbutton _("  Mute All  "):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
@@ -985,11 +985,11 @@ screen help():
 
             hbox:
 
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+                textbutton _("  Keyboard  ") action SetScreenVariable("device", "keyboard")
+                textbutton _("  Mouse  ") action SetScreenVariable("device", "mouse")
 
                 if GamepadExists():
-                    textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+                    textbutton _("  Gamepad  ") action SetScreenVariable("device", "gamepad")
 
             if device == "keyboard":
                 use keyboard_help
@@ -1096,7 +1096,7 @@ screen gamepad_help():
         label _("Y/Top Button")
         text _("Hides the user interface.")
 
-    textbutton _("Calibrate") action GamepadCalibrate()
+    textbutton _("  Calibrate  ") action GamepadCalibrate()
 
 
 style help_button is gui_button
@@ -1161,8 +1161,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 100
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("  Yes  ") action yes_action
+                textbutton _("  No  ") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -1428,10 +1428,10 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+            textbutton _("  Back  ") action Rollback()
+            textbutton _("  Skip  ") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("  Auto  ") action Preference("auto-forward", "toggle")
+            textbutton _("  Menu  ") action ShowMenu()
 
 
 style window:
