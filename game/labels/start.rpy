@@ -10,10 +10,10 @@ label beggining:
 
   $ renpy.pause(delay=1.0)
 
-  show kioko normal at center
+  show kyoko normal at center
   with Dissolve(0.5)
 
-  kioko """
+  kyoko """
   Hey...
 
   Earth calling, are you there?
