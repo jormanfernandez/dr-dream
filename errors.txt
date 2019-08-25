@@ -2,9 +2,41 @@
 errors listed below, and try again.
 
 
-File "game/image_handlers/characters/kyoko.rpy", line 4: Line is indented, but the preceding image statement statement does not expect a block. Please check this line's indentation.
-    zoom 2.0
+File "game/image_handlers/characters/kyoko.rpy", line 5: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 10: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 15: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 20: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 25: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 30: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 35: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 40: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
+    ^
+
+File "game/image_handlers/characters/kyoko.rpy", line 45: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    yalign 1.0
     ^
 
 Ren'Py Version: Ren'Py 7.1.3.1092
-Sat Aug 24 16:00:41 2019
+Sun Aug 25 13:17:42 2019

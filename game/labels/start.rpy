@@ -6,7 +6,7 @@ label beggining:
   stop music fadeout 1.0
   scene bg dark with Fade(2.0, 0.5, 1.0)
 
-  scene bg street evening with Dissolve(1.0)
+  scene bg street night with Dissolve(1.0)
 
   $ renpy.pause(delay=1.0)
 
