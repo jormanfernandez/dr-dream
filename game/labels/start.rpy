@@ -10,26 +10,34 @@ label beggining:
 
   $ renpy.pause(delay=1.0)
 
-  show kyoko happy at center
+  show dr talking1:
+    yalign 1.0
+    xalign 0.15
   with Dissolve(0.5)
 
-  kyoko """
-  And... and.... then we could go to the festival next week and...
+  show mother normal:
+    yalign 1.0
+    xalign 0.85
+  with Dissolve(0.5)
+
+
+  dr """
+  I am happy to be accepted by you.
   """
 
-  show kyoko normal
+  show dr normal
 
-  kyoko """
+  dr """
   ...
   """
 
-  show kyoko speaking
+  show dr talking1
 
-  kyoko """
+  dr """
   Hey! Are you there? Earth calling...
   """
 
-  show kyoko normal
+  show dr normal
 
   $ renpy.pause(delay=1.0)
 
