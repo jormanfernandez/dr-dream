@@ -5,8 +5,10 @@ define dr = Character("[dr_name]", color="#410f5d")
 
 image dr normal:
     "characters/dr/normal.png"
+    yalign 1.0
     zoom 1.85
 
 image dr talking1:
     "characters/dr/talking1.png"
+    yalign 1.0
     zoom 1.85

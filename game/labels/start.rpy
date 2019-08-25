@@ -11,12 +11,10 @@ label beggining:
   $ renpy.pause(delay=1.0)
 
   show dr talking1:
-    yalign 1.0
     xalign 0.15
   with Dissolve(0.5)
 
   show mother normal:
-    yalign 1.0
     xalign 0.85
   with Dissolve(0.5)
 
