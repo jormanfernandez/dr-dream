@@ -10,25 +10,30 @@ label beggining:
 
   $ renpy.pause(delay=1.0)
 
-  show kyoko normal at center
+  show kyoko happy at center
   with Dissolve(0.5)
 
   kyoko """
-  Hey...
-
-  Earth calling, are you there?
-
-  Dude, don't let me talking alone like that, its really freaky.
+  And... and.... then we could go to the festival next week and...
   """
 
-  menu:
-    ""
+  show kyoko normal
 
-    "Yes, sorry":
-      $ choice = False
+  kyoko """
+  ...
+  """
 
-    "I'll wait":
-      $ choice = True
+  show kyoko speaking
 
+  kyoko """
+  Hey! Are you there? Earth calling...
+  """
+
+  show kyoko normal
+
+  $ renpy.pause(delay=1.0)
+
+  scene bg dark
+  with Fade(2.00, 1.00, 1.50)
 
 return
