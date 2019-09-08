@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/labels/start.rpy", line 49: expected statement.
-    pyton:
-         ^
+File "game/image_handlers/characters/dr.rpy", line 46: invalid syntax
+    im.Blur(Image("characters/dr/normal.png") 1.5)
+                                                 ^
 
 Ren'Py Version: Ren'Py 7.1.3.1092
-Sun Aug 25 21:49:48 2019
+Sun Sep 08 01:25:55 2019

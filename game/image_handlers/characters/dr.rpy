@@ -42,3 +42,8 @@ image dr talking3:
     "characters/dr/talking3.png"
     yalign 1.0
     zoom 1.85
+
+image dr blurred:
+    "characters/dr/blurred.png"
+    yalign 1.0
+    zoom 1.85
