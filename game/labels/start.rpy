@@ -8,17 +8,15 @@ label beggining:
 
   scene bg street night with Dissolve(1.0)
 
+  play music music_joy fadein 1.0 fadeout 1.5 loop
+
   "..." """
   And I think it would really help her.
   """
 
-  hide kyoko with fade
-
   "..." """
   Are you listening to me?
   """
-
-  hide kyoko with fade
 
   "..." """
   Hey!!!
@@ -169,9 +167,13 @@ label beggining:
   HEY YOU! WHAT ARE YOU..
   """
 
+  stop music fadeout 1.5
+
   show kyoko desperate
 
   me "Shhh!!! Wait."
+
+  play music music_doubt fadein 1.0 fadeout 1.0 loop
 
   show kyoko at left
   with MoveTransition(0.2)
@@ -242,6 +244,12 @@ label beggining:
 
   "..." "Yeah, I know. Don't worry, everything will work as planned."
 
+  kyoko "No! Leave him alone!"
+
+  "..." "Shut up, lady. Your voice is annoying me."
+
+  window hide dissolve
+
   show bath at center:
     alpha 0.00
   with Dissolve(0.3)
@@ -252,7 +260,11 @@ label beggining:
     alpha 0.15
   with Dissolve(0.3)
 
-  "..." "It will sell fast. I got that."
+  window show dissolve
+
+  "..." "Don't worry, you'll get your little thing. It is in good state."
+
+  window hide dissolve
 
   show bath at center:
     alpha 0.00
@@ -268,7 +280,11 @@ label beggining:
     alpha 1.00
   with Dissolve(1.0)
 
+  window show dissolve
+
   "..." "Hmmm... you're still fighting. Nice."
+
+  window hide dissolve
 
   show dr blurred:
     alpha 0.00
@@ -284,13 +300,17 @@ label beggining:
     alpha 0.15
   with Dissolve(0.3)
 
+  window show dissolve 
+
   "..." "Until we meet again."
+
+  window hide dissolve
 
   hide dr blurred
   with Dissolve(1.0)
 
-
+  stop music fadeout 2.0
   scene bg dark
-  with Fade(1.00, 2.00, 1.00)
+  with Fade(1.00, 3.00, 1.00)
 
 return

@@ -30,4 +30,6 @@ image bg bath normal:
     route + "/bath normal.png"
     yalign 1.0
     xalign 0.5
-    zoom 1.05 
+    zoom 1.05
+
+image logo = "logo.png"
